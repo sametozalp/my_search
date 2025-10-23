@@ -35,4 +35,22 @@ public class MySearch {
         System.out.println(arrayList);
     }
 
+    public static void selectionSort2(ArrayList<Integer> arrayList) {
+
+        int size = arrayList.size();
+
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size; j++) {
+                if (arrayList.get(i) > arrayList.get(j)) {
+                    int temp = arrayList.get(i);
+                    arrayList.set(i, arrayList.get(j));
+                    arrayList.set(j, temp);
+                }
+            }
+
+            System.out.println(arrayList);
+        }
+
+    }
+
 }
