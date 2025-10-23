@@ -54,4 +54,22 @@ public class MySearch {
 
     }
 
+    public void insertionSort(ArrayList<Integer> arrayList) {
+        int size = arrayList.size();
+
+        for (int i = 1; i < size; i++) {
+            int temp = arrayList.get(i);
+            int j = i - 1;
+
+            while (j >= 0 && temp < arrayList.get(j)) {
+                arrayList.set(j + 1, arrayList.get(j));
+                j--;
+            }
+
+            arrayList.set(j + 1, temp);
+        }
+
+        System.out.println(arrayList);
+    }
+
 }
