@@ -35,6 +35,7 @@ public class MySearch {
         System.out.println(arrayList);
     }
 
+    // tam selection sort değil ama sıralama yapıyor
     public static void selectionSort2(ArrayList<Integer> arrayList) {
 
         int size = arrayList.size();
